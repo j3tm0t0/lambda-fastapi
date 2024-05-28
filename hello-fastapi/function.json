@@ -1,0 +1,27 @@
+{
+  "Architectures": [
+    "arm64"
+  ],
+  "EphemeralStorage": {
+    "Size": 512
+  },
+  "FunctionName": "hello-fastapi",
+  "Handler": "main.handler",
+  "Layers": [
+    "arn:aws:lambda:ap-northeast-1:xxxxxxxxxxxx:layer:fastapi:1"
+  ],
+  "LoggingConfig": {
+    "LogFormat": "Text",
+    "LogGroup": "/aws/lambda/hello-fastapi"
+  },
+  "MemorySize": 128,
+  "Role": "arn:aws:iam::xxxxxxxxxxxx:role/lambda_basic_execution",
+  "Runtime": "python3.12",
+  "SnapStart": {
+    "ApplyOn": "None"
+  },
+  "Timeout": 3,
+  "TracingConfig": {
+    "Mode": "PassThrough"
+  }
+}
